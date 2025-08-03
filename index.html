@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>Mi Fiscal General</h1>
+  <div class="button-grid">
+    <a href="https://padron.gba.gob.ar/" target="_blank" class="btn">🗳️ Consulta Padrón</a>
+    <a href="https://tramites.renaper.gob.ar/mi_ejemplar/" target="_blank" class="btn">🆔 Ejemplar DNI</a>
+    <a href="http://elecciones.castelli.gob.ar/mesas.php" target="_blank" class="btn">👥 Votantes por Mesa</a>
+    <button class="btn" onclick="openReplaceModal()">📲 Solicitud de Reemplazo</button>
+  </div>
+</div>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeReplaceModal()">&times;</span>
+    <h2>Remplazo de Fiscal</h2>
+    <input type="text" id="mesa" placeholder="Mesa a activar" />
+    <input type="text" id="remplazado" placeholder="Fiscal a remplazar" />
+    <button onclick="sendWhatsApp()">Enviar por WhatsApp</button>
+  </div>
+</div>
